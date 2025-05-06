@@ -63,7 +63,8 @@ public class Books
                     String title = scanner.nextLine();
                     System.out.print("Enter author: ");
                     String author = scanner.nextLine();
-                    
+                    System.out.print("Enter quantity: ");
+                    int qty = scanner.nextLine();
             }
             
         }while (!choice.equals("Q"));   //loop until choice is 'Q'
