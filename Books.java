@@ -53,7 +53,19 @@ public class Books
             System.out.println("(P)rint all");
             System.out.println("(Q)uit");
             
-            choice = UI.askString("Enter a choice: ");
-        }
+            System.out.println("Enter a choice: ");
+            choice = scanner.nextLine().trim().toUpperCase(); // avoid case-senstivity and 
+                                                              // whitespace before or after
+            
+            switch(choice){
+                case "A": // if the choice is exactly A
+                    System.out.print("\nEnter book title: ");
+                    String title = scanner.nextLine();
+                    System.out.print("Enter author: ");
+                    String author = scanner.nextLine();
+                    
+            }
+            
+        }while (!choice.equals("Q"));   //loop until choice is 'Q'
     }
 }
